@@ -1,0 +1,29 @@
+	DIFFERENCE BETWEEN PROTOCOLS AND SUBCLASSING
+
+
+-> Protocols are used to declare the methods which are to be used for a particular situation.A class conforms to a protocol only when the class has implemented ALL the required methods of the protocol.Thus,it ensures that a certain form of method template is implemented.
+   Subclassing is used when a class needs to inherit certain properties and behaviour from its parent class.The child class also has the opportunity to either define its own additional behavior or override the behavior it inherited from the parent.
+
+->A protocol is a group of related properties and methods that can be implemented by any class.
+ A class is a group of properties and methods that is suitable to be used by itself and its child classes only.
+
+-> A protocol is used to declare methods and properties that are independent of any specific class.
+   In contrast,classes are used to declare methods and properties associated with only that class.
+
+->A class can conform to many protocols simultaneously. 
+   A subclass can inherit only from 1 class directly.
+
+-> Protocols are used to indicate indicate non-hierarchical similiarities between classes.
+   Subclassing is used to indicate a hierarchical relationship between  the parent and the child class.
+
+-> Protocols are more flexible than a normal class interface, since they let you reuse a single API declaration in completely unrelated classes. This makes it possible to represent horizontal relationships.
+  
+
+-> Protocols do not have any variables associated with them and hence a class conforming to it will not have access to any additional variables.
+   Subclassing gives you access to the parent's variables also.
+
+-> An example for protocols:
+   The entry point into any iOS app is an “application delegate” object that handles the major events in a program’s life cycle. Instead of forcing the delegate to inherit from any particular superclass, the UIKit Framework just makes you adopt a protocol:
+As long as it responds to the methods defined by UIApplicationDelegate, you can use any object as your application delegate. Implementing the delegate design pattern through protocols instead of subclassing gives developers much more leeway when it comes to organizing their applications.
+   An example for subclassing:
+   The UIButton class itself is defined to inherit from UIControl, which describes basic behavior common to all user interface controls on iOS. The UIControl class in turn inherits from UIView, giving it functionality common to objects that are displayed on screen. UIView inherits from UIResponder, allowing it to respond to user input such as taps, gestures or shakes. Finally, at the root of the tree, UIResponder inherits from NSObject.
