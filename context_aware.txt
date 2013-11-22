@@ -1,0 +1,8 @@
+Context awareness is a property of mobile devices that is defined complementary to location awareness. Whereas location may determine how certain processes in a device operate, context may be applied more flexibly with mobile users, especially with users of smart phones. Context awareness originated as a term from ubiquitous computing or as so-called pervasive computing which sought to deal with linking changes in the environment with computer systems, which are otherwise static. 
+
+
+Context aware applications provide a richer and better user experience
+
+Pervasive games such as temple run where the user's orientation of the screen determines he direction in which the character moves is an example of context awar eapplication since in this the application is aware of the environment in which the phone is being used.
+
+The ability of smartphones to change their screen;s orientation is yet another example as it keeps in mind the ease of use for the user as and when he uses the screen.
